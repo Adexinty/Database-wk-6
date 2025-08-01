@@ -8,7 +8,7 @@ SELECT products.productName, products.productVendor, products.productLine
 FROM products
 LEFT JOIN productlines ON products.productLine = productlines.productLine;
 
--- Select order details for first 10 orders using RIGHT JOIN with customers
+-- Select order details for first 10 orders using RIGHT JOIN with customers.
 SELECT orders.orderDate, orders.shippedDate, orders.status, orders.customerNumber
 FROM customers
 RIGHT JOIN orders ON customers.customerNumber = orders.customerNumber
